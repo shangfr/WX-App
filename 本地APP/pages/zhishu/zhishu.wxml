@@ -1,0 +1,16 @@
+<!--pages/zhishu/zhishu.wxml-->
+
+<text>{{sptext}}</text>
+<view class="name2">投资建议</view>
+<view class="des2">{{jianyi}}
+</view>
+<canvas canvas-id="ringCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+<view class="name2">投资收益</view>
+<canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+<view class="card">
+  <text class="des">桃树股票价格指数为度量和反映DataBrain推荐的股票总体价格水平及其变动趋势而编制的股价统计相对数。
+</text>
+</view>
+<text>{{sptext}}</text>
+
+<canvas canvas-id="canvas6" class="canvas" bindtouchstart="touchHandler"></canvas>

@@ -1,0 +1,35 @@
+<!--pages/home/home.wxml-->
+<view class="header">
+  <view class="cover">
+    <image src="../../images/head.png" class="img" mode="aspectFill"></image>
+  </view>
+  <view class="filter">
+  </view>
+</view>
+<text>{{sptext}}</text>
+<view class="card">
+  <text class="name">关于桃树</text>
+  <text class="des">桃树科技独创的建模平台DataBrain™从多个数据源实现数据准备（包括特征合成、数据清洗、特征工程），算法调优（基于算法库自动挑选最优算法与参数建立最优模型），知识发现（将模型转化为知识与决策信息），效果分析（从不同维度分析模型效果），模型部署（高效部署模型及生成系统），模型更新（实时监控模型和数据变化，从反馈中自动学习）。
+</text>
+</view>
+<text>{{sptext}}</text>
+
+<navigator url="../../pages/game/game">
+<view class="article-list">
+  <view class="article-list-item">
+    <text>关注桃树</text>
+    <image src="../../images/skills.png"></image>
+  </view>
+</view>
+</navigator>
+
+
+
+
+
+<view class="about">
+  <view class="about-des">建议&合作</view>
+  <view class="about-des">shangfr@foxmail.com</view>
+</view>
+
+

@@ -1,0 +1,58 @@
+/* pages/tuijian/st1/st1.wxss */
+
+page {
+  background-color: #EAEAEA;
+}
+
+.show {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.table {
+  color: black;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tit {
+  width: 90%;
+  background: white;
+  padding: 20rpx;
+}
+
+.date {
+  font-size: 20rpx;
+  text-align: center;
+  width: 20%;
+  background: #ADADAD;
+  padding: 10rpx;
+    margin: 50rpx 0rpx 20rpx 0rpx;
+  border-radius: 2px;
+  color: white;
+}
+
+.key {
+  width: 92%;
+  background:#FF7F00;
+  padding: 12rpx;
+  color: white;
+  text-align: center;
+ margin: 0rpx;
+ border-radius: 5px 5px 0px 0px;
+}
+
+.key2 {
+  width: 92%;
+  background:#FF4040;
+  padding: 12rpx;
+  color: white;
+  text-align: center;
+ margin: 0rpx;
+ border-radius: 0px 0px 5px 5px;
+}

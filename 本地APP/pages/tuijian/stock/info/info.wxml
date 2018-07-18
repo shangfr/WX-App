@@ -1,0 +1,25 @@
+
+<view class="table" wx:for="{{twoList}}">
+  <view class="date">
+    {{item.date}}
+  </view>
+  <view class="key">新闻标题</view>
+  <view class="tit">
+
+    {{item.title}}
+
+
+  </view>
+
+<view class="key2" wx:if="{{item.eva > 0}}" style="background-color: #FF4040">内容分析：利多</view>
+  <view class="key2" wx:elif="{item.eva < 0}}" style="background-color: #7CCD7C">内容分析：利空</view>
+  <view class="key2" wx:else style="background-color: #FFD700">内容分析：中性</view>
+</view>
+
+
+
+<view class="about">
+  <view class="about-des">TaoData-DataBrain</view>
+  <view class="about-des">投资有风险-入市需谨慎</view>
+
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/tuijian/tuijian",
+    "pages/tuijian/stock/stock",
+    "pages/tuijian/stock/info/info",
+    "pages/home/home",
+    "pages/zhishu/zhishu",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33a3dc",
+    "navigationBarTitleText": "TaoData-DataBrain",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#636363",
+    "selectedColor": "white",
+    "backgroundColor": "#33a3dc",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/tuijian/tuijian",
+        "text": "推荐",
+        "iconPath": "images/maps2.png",
+        "selectedIconPath": "images/maps.png"
+      },
+      {
+        "pagePath": "pages/zhishu/zhishu",
+        "text": "指数",
+        "iconPath": "images/icon2.png",
+        "selectedIconPath": "images/icon1.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "桃树",
+        "iconPath": "images/winter2.png",
+        "selectedIconPath": "images/winter.png"
+      }
+    ]
+  }
+}

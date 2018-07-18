@@ -1,0 +1,25 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rpx 0;
+  box-sizing: border-box;
+} 
+.canvas {
+    width: 100%;
+    height: 220px;
+}
+
+
+
+.about {
+  margin-top: 20px;
+}
+.about-des {
+  font-size: 28rpx;
+  color: #BFC5CC;
+  text-align: center;
+} 

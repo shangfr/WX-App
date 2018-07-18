@@ -1,0 +1,72 @@
+<wxs module="filters" src="../../addmul.wxs"></wxs>
+<view class="btnGroup2">
+  <view class="title">
+    {{quotation.name}}
+  </view>
+  <view class="pad" style="color: #f78d1d; font-size: 30rpx;">{{quotation.code}}</view>
+
+<!-- 个股头部指标 -->
+<view id="section_quotation">
+  <!-- 价格、涨跌、涨跌幅 -->
+  <view wx:if="{{quotation.changepercent > 0}}" style="color: #FF4040">
+    <view class="quota_price">{{filters.toFix(quotation.trade)}}</view>
+    <view class="quota_zd">{{filters.toFix(quotation.trade*quotation.changepercent/100)}}</view>
+    <view class="quota_zdf">{{quotation.changepercent}}%</view>
+  </view>
+  <view wx:elif="{{quotation.changepercent < 0}}" style="color: #7CCD7C"> 
+    <view class="quota_price">{{filters.toFix(quotation.trade)}}</view>
+    <view class="quota_zd">{{filters.toFix(quotation.trade*quotation.changepercent/100)}}</view>
+    <view class="quota_zdf">{{quotation.changepercent}}%</view>
+  </view>
+  <view wx:else style="color: #FFD700">
+    <view class="quota_price">{{quotation.trade}}</view>
+    <view class="quota_zd">{{filters.toFix(quotation.trade*quotation.changepercent/100)}}</view>
+    <view class="quota_zdf">{{quotation.changepercent}}%</view>
+  </view>
+
+
+
+  <!-- 开盘、最高、最低 -->
+  <text class="quota_item quota_row1 quota_colum3">开盘：</text>
+  <text class="quota_item quota_row2 quota_colum3">最高：</text>
+  <text class="quota_item quota_row3 quota_colum3">最低：</text>
+  <text class="quota_item quota_row1 quota_colum4">{{quotation.open}}</text>
+  <text class="quota_item quota_row2 quota_colum4">{{quotation.high}}</text>
+  <text class="quota_item quota_row3 quota_colum4">{{quotation.low}}</text>
+
+  <!-- 换手、市盈、市净 -->
+  <text class="quota_item quota_row1 quota_colum5">换手：</text>
+  <text class="quota_item quota_row2 quota_colum5">市盈：</text>
+  <text class="quota_item quota_row3 quota_colum5">市净：</text>
+  <text class="quota_item quota_row1 quota_colum6">{{quotation.turnoverratio}}</text>
+  <text class="quota_item quota_row2 quota_colum6">{{quotation.per}}</text>
+  <text class="quota_item quota_row3 quota_colum6">{{quotation.pb}}</text>
+
+  <!-- 成交量、净流、总值 -->
+  <text class="quota_item quota_row4 quota_colum1">成交额：</text>
+  <text class="quota_item quota_row4 quota_colum3">流值：</text>
+  <text class="quota_item quota_row4 quota_colum5">总值：</text>
+  <text class="quota_item quota_row4 quota_colum2">{{filters.toFix(quotation.amount/10000)}}万</text>
+  <text class="quota_item quota_row4 quota_colum4">{{filters.toFix(quotation.nmc/10000)}}亿</text>
+  <text class="quota_item quota_row4 quota_colum6">{{filters.toFix(quotation.mktcap/10000)}}亿</text>
+
+</view>
+
+  <canvas canvas-id="canvas6" class="canvas" bindtouchstart="touchHandler"></canvas>
+  <view style="color: #f78d1d; font-size: 30rpx;">（交易日 20:00更新测评）</view>
+</view>
+
+
+
+<view>{{sptext}}</view>
+<view>{{sptext}}</view>
+<view>{{sptext}}</view>
+<view>{{sptext}}</view>
+<view>{{sptext}}</view>
+<view>{{sptext}}</view>
+
+<view class="about">
+  <view class="about-des">TaoData-DataBrain</view>
+  <view class="about-des">投资有风险-入市需谨慎</view>
+
+</view>

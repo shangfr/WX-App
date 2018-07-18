@@ -1,0 +1,35 @@
+/* pages/tuijian/stock/info1/info1.wxss */
+page {
+  background-color: white;
+}
+
+.table {
+  border: 30rpx solid white;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+.td {
+    width:40%;
+    justify-content: center;
+    text-align: center;
+}
+.bg-w{
+  background: white;
+}
+.bg-g{
+  background: #f9f9ff;
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  background: #ff3399;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}

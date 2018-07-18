@@ -1,0 +1,58 @@
+<!--pages/tuijian/st2/st2.wxml-->
+<!--index.wxml-->
+<!--pages/tuijian/st1/st1.wxml-->
+
+
+
+
+<view class="card-list2">
+      <navigator url="../../../pages/tuijian/stock/info/info?index={{id}}">
+    <view class="list-item">
+      <image src="../../../images/s2.png" mode="aspectFill" />
+      <text>新闻</text>
+    </view>
+  </navigator>
+   <navigator url="../../../pages/tuijian/stock/info1/info1?index={{id}}">
+    <view class="list-item">
+      <image src="../../../images/s4.png" mode="aspectFill" />
+      <text>研报</text>
+    </view>
+  </navigator>
+   <navigator url="../../../pages/tuijian/stock/info2/info2?index={{id}}">
+    <view class="list-item">
+      <image src="../../../images/s3.png" mode="aspectFill" />
+      <text>公告</text>
+    </view>
+  </navigator>
+ <navigator url="../../../pages/tuijian/stock/info3/info3?index={{id}}">
+    <view class="list-item">
+      <image src="../../../images/s1.png" mode="aspectFill" />
+      <text>预测</text>
+    </view>
+  </navigator>
+</view>
+
+<canvas canvas-id="canvas6" class="canvas" bindtouchstart="touchHandler"></canvas>
+
+  <view class="container">
+
+  <view class="table">
+            <view class="tr">
+            <view class="th">{{listData.name}}</view>
+          <view class="th">{{id}}</view>
+        </view>
+
+        <view class="tr" wx:for="{{listData.jbm}}">
+            <view class="td">{{item.code}}</view>
+            <view class="td">{{item.text}}</view>
+
+        </view>
+    </view>
+
+
+    <view class="about">
+  <view class="about-des">TaoData-DataBrain</view>
+  <view class="about-des">投资有风险-入市需谨慎</view>
+
+</view>
+     </view>

@@ -1,0 +1,45 @@
+/* pages/zhishu/zhishu.wxss */
+/* 例如设计图尺寸为320 x 300 */
+/**index.wxss**/
+
+.name {
+  font-size: 35rpx;
+  color: #DBAC5A;
+  font-weight: bolder;
+  line-height: 1;
+  text-align: center;
+}
+.des {
+  margin-top: 12px;
+  font-size: 32rpx;
+  color: #949494;
+}
+.name2 {
+  margin: 0 auto 0 auto;
+  font-size: 35rpx;
+  color: #DBAC5A;
+  font-weight: bolder;
+  line-height: 1;
+  text-align: center;
+}
+.des2 {
+  margin-top: 12px;
+  font-size: 32rpx;
+  color: #949494;
+  text-align: center;
+}
+
+.card {
+  padding: 32px 16px;
+  margin: 0 auto 0 auto;
+  width: 92%;
+  min-height: auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #007d65;
+}
+.card text {
+  display: block;
+}
+

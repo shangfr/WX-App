@@ -1,0 +1,49 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rpx 0;
+  box-sizing: border-box;
+} 
+.canvas {
+    width: 100%;
+    height: 220px;
+}
+
+
+.btnGroup2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx 0rpx 20rpx 0rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  color: #33a3dc;
+  border-bottom: 2px solid #eee;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0rpx 0rpx 15rpx 0rpx;
+}
+
+.pad {
+  padding: 10rpx 0rpx 0rpx 0rpx;
+}
+
+
+.about {
+  margin-top: 20px;
+}
+.about-des {
+  font-size: 28rpx;
+  color: #BFC5CC;
+  text-align: center;
+} 

@@ -1,0 +1,62 @@
+<!--pages/tuijian/tuijian.wxml-->
+
+<view class="rank">
+  <view class="rank__banner">
+    <view class="rank__title">桃树推荐</view>
+    <view class="rank__item rank__item--first">
+      <image lazy-load="true" class="rank__icon rank__icon--first" src="../../images/stock2.png" />
+      <view class="rank__info">
+        <view class="rank__name">Follow</view>
+        <view class="rank__detail">DataBrain</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="{{open?'display_show':'display_none'}}">
+  <view class="card-list">
+    <text class="card-title">最新调仓( {{riqi}} )</text>
+    <navigator wx:for="{{stock}}" class="card-item" url="../../pages/tuijian/stock/stock?index={{item.cid}}">
+
+      <view>
+        <image class="card-image" wx:if="{{item.star > 0}}" src="../../images/buy.png" mode="aspectFill" />
+        <image class="card-image" wx:elif="{{item.star < 0}}" src="../../images/sell.png" mode="aspectFill" />
+        <image class="card-image" wx:else src="../../images/wait.png" mode="aspectFill" />
+      </view>
+
+      <view class="card-text">
+        <view class="card-subtitle">
+          <view wx:if="{{item.star > 0}}" style="color: #FF4040"> {{item.title}} </view>
+          <view wx:elif="{{item.star < 0}}" style="color: #7CCD7C"> {{item.title}} </view>
+          <view wx:else style="color: #FFD700"> {{item.title}} </view>
+          <text class="card-code">{{item.cid}}</text>
+        </view>
+      </view>
+      <view class="card-pe">
+        <view wx:if="{{item.star > 0}}" style="color: #FF4040"> 看涨{{item.star}}★ </view>
+        <view wx:elif="{{item.star < 0}}" style="color: #7CCD7C"> 看跌{{-item.star}}☆ </view>
+        <view wx:else style="color: #FFD700"> 观望★☆ </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<view bindtap="showprice">
+  <view class="{{open?'display_none':'display_show'}}">
+    <text>{{sptext}}</text>
+    <view class="card">
+      <text class="name">投资有风险-入市需谨慎</text>
+      <text class="des">推荐内容仅供参考和学习交流之用，不够成任何投资建议，用户据此操作，风险自担。  
+</text>
+    </view>
+    <text>{{sptext}}</text>
+    <button type="primary" size="default" style="margin-top:5rpx;background-color: #ff8719;width:95%;"> 了解，查看推荐 </button>
+  </view>
+</view>
+<text>{{sptext}}</text>
+<view class="about">
+  <view class="about-des">TaoData-DataBrain</view>
+  <view class="about-des">投资有风险-入市需谨慎</view>
+
+</view>

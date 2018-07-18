@@ -1,0 +1,116 @@
+/* pages/zhishu/zhishu.wxss */
+/* 例如设计图尺寸为320 x 300 */
+/**index.wxss**/
+.title {
+   text-align: center;
+    padding: 14px;
+    font-size: 16px;  
+}
+
+.img {
+  width:750rpx;
+}
+
+.header {
+  position: relative;
+  height: 550rpx;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden; 
+}
+
+.filter {
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 60%, rgba(255, 255, 255, 1));
+  z-index: 2;
+}
+
+.hero-title {
+  position: absolute;
+  bottom: 0; 
+  left: 3%;
+  z-index: 3;
+}
+.role {
+  font-size: 30rpx;
+  color: #DBAC5A;
+  font-weight: bold;
+  text-shadow: 0 0 12px #fff; 
+  line-height: 1;
+  margin-bottom: 16rpx;
+}
+.name {
+  font-size: 35rpx;
+  color: #DBAC5A;
+  font-weight: bolder;
+  line-height: 1;
+  text-align: center;
+}
+.des {
+  margin-top: 12px;
+  font-size: 32rpx;
+  color: #949494;
+}
+
+.card {
+  padding: 32px 16px;
+  margin: 0 auto 0 auto;
+  width: 92%;
+  min-height: 160px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #007d65;
+}
+.card text {
+  display: block;
+}
+
+.line{
+text-align: center;
+width:100%;
+height:100rpx;
+background:#007d65;
+}
+
+
+
+
+
+
+
+
+.article-list-item {
+  position: relative;
+  margin-bottom: 18rpx;
+  height: 174rpx;
+  background-color: #ccc;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+}
+.article-list-item text {
+  position: relative;
+  font-size: 36rpx;
+  color: #fff;
+  line-height: 174rpx;
+  z-index: 1;
+}
+.article-list-item image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

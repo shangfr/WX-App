@@ -1,0 +1,12 @@
+<!--pages/tuijian/stock/info3/info3.wxml-->
+<text>{{sptext}}</text>
+
+ <block wx:for="{{PREdata.predict}}">
+  <view class="con">
+    <view class="left">
+  </view>
+  <view class="right">
+    <text>{{item.text}}</text>
+  </view>
+</view>​
+   </block>

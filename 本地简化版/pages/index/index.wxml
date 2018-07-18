@@ -1,0 +1,73 @@
+
+
+<view class="btnGroup2">
+  <view class="title">
+    今日行情
+  </view>
+  <view class="pad" style="color: #f78d1d; font-size: 30rpx;">{{date}}</view>
+  <view style="color: #f78d1d; font-size: 30rpx;">{{jianyi}}</view>
+</view>
+
+
+<canvas canvas-id="ringCanvas" style="padding: 50rpx 0rpx;"></canvas>
+
+
+
+<view class="btnGroup2">
+  <view class="title">
+    本期推荐
+  </view>
+  <view style="color: #f78d1d; font-size: 30rpx;">（点击个股，查看详情）</view>
+  <view class="tr" style="width: 96%; padding: 10rpx 0rpx 0rpx 0rpx;">
+    <view class="th">股票</view>
+    <view class="th ">市盈率</view>
+    <view class="th">市净率</view>
+    <view class="th ">利润同比(%)</view>
+    <view class="th">行业</view>
+     <view class="th">地区</view>
+  </view>
+  <view class="table" style="background: #EE7600;">
+ <navigator wx:for="{{stock}}" url="../../pages/stock/stock?index={{item.code}}">
+
+      <view class="tr">
+        <view class="td">
+          <view class="btnGroup2 pad">
+            <view>{{item.name}}</view>
+            <view>{{item.code}} </view>
+          </view>
+        </view>
+        <view class="td">{{item.pe}}</view>
+        <view class="td">{{item.pb}}</view>
+        <view class="td">{{item.profit}}</view>
+        <view class="td">{{item.industry}}</view>
+            <view class="td">{{item.area}}</view>
+      </view>
+
+
+  </navigator>
+  </view>
+</view>
+
+
+<view class="btnGroup2">
+  <view class="title">
+    DataBrain收益
+  </view>
+  <view class="pad" style="color: #f78d1d; font-size: 30rpx;">2018-05-14——{{date}}</view>
+  <view style="color: #f78d1d; font-size: 30rpx;">（每周更新）</view>
+</view>
+
+<canvas canvas-id="lineCanvas" class="canvas" style="padding: 50rpx 0rpx;" disable-scroll="false" ></canvas>
+
+
+
+
+
+
+<view class="about">
+  <view class="about-des">TaoData-DataBrain</view>
+  <view class="about-des">投资有风险-入市需谨慎</view>
+
+
+
+</view>
