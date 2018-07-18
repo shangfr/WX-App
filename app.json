@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/stock/stock"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#33a3dc",
+    "navigationBarTitleText": "TaoData",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
+  }
+}
